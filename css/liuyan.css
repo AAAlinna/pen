@@ -1,0 +1,58 @@
+/* 留言板表单设计 */
+.list{float:left;
+    width:320px;
+    height:600px;
+    margin:20px 0 0 20px;
+    position: absolute;
+    right: 80px;
+    top: 100px;
+}
+.list img{
+    float:left;
+    width:320px;
+    height:230px;
+    border-radius:5px;
+} 
+.list p{float:left;
+    width:350px;
+    height:450px;
+    margin-top:22px;
+    background-color:#fff;
+    border-radius:10px;
+}
+.list p b{display: flex;
+    justify-content: center;
+    width:280px;
+    line-height:30px;
+    margin:10px 0 0 20px;
+}
+.list p span{float:left;
+    width:280px;
+    line-height:27px;
+    margin-left:20px;
+}
+.list p span c{display: flex;
+    justify-content: center;
+    font-weight: bold;
+    color: #67a8c8;}
+.list p span input{width:275px;
+    height: 25px;
+    margin-top: 10px;}
+.list p span input::placeholder{
+    color:lightslategray;}
+.list p span input[type="submit"]{
+
+    width: 75px;
+    height: 25px;
+    color: #fff;
+    background-color: #67a8c8;
+    border: 0;
+    font:15px "黑体";
+    text-align: center;
+    margin: 10px 100px;
+    border-radius: 5px;}
+.list p span audio{
+   width:270px;
+   height: 25px; 
+}
+

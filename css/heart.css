@@ -1,0 +1,76 @@
+/* 跳动爱心设置 */
+
+.myheart{
+display: flex;
+justify-content: space-around;
+position: absolute;
+top:650px;
+right:100px;
+width: 298px;
+height: 198px;
+}
+.myheart span {
+    --h:50%;
+    --t:25%;
+    --c:pink;
+    position: relative;
+    top: var(--t);
+    width: 15px;
+    height: var(--h);
+    background-color: var(--c);
+    border-radius: 15px;
+    animation: ani 1s infinite;
+}
+/* 第一和第九变化相同 */
+.myheart span:nth-child(1),
+.myheart span:nth-child(9){
+    --h:40px;
+    --t:60px;
+    --c:lightgreen;   
+
+}
+/* 2和八相同 */
+.myheart span:nth-child(2),
+.myheart span:nth-child(8){
+    --h:120px;
+    --t:20px;
+    --c:gold;   
+
+}
+.myheart span:nth-child(3),
+.myheart span:nth-child(7){
+    --h:160px;
+    --t:0px;
+    --c:skyblue;   
+
+}
+.myheart span:nth-child(4),
+.myheart span:nth-child(6){
+    --h:160px;
+    --t:30px;
+    --c:hotpink;   
+
+}
+
+.myheart span:nth-child(5){
+    --h:160px;
+    --t:50px;
+    --c:orange;   
+
+}
+/* 跳动特效 */
+@keyframes ani {
+    0%,
+    30% {
+        background-color:var(--c);
+        height: var(--h);
+        top:var(--t);
+    }
+    60%,
+    70%{
+        background-color:pink;
+        height: 50%;
+        top:25%;
+        filter: blur(1px);
+    }
+}

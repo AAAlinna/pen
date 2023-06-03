@@ -1,0 +1,134 @@
+/* 联系方式部分 */
+
+
+/* 照片阴影处理 */
+.img{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    /* 阴影处理 */
+    box-shadow: 18px 18px 30px rgba(0, 0, 0, 0.808),
+               -18px -18px 30px rgba(143, 137, 137, 0.808);
+   transform: all .2s ease-out;
+}
+/* 缩放 */
+img{
+    width: 60px;
+    transform: all .2s ease-out;
+}
+/* 鼠标移动触发 */
+.img:hover{
+    cursor: pointer;
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0.2),
+    0 0   rgba(143, 137, 137, 1);
+    inset: 18px 18px 30px rgba(0, 0, 0, 0.808),
+    -18px -18px 30px rgba(255, 255, 255, 0.808);
+
+}
+
+.img:hover img{
+    width: 58px;
+
+}
+.imgs{
+    position:absolute;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    left: 20%;
+    gap: 30px;
+}
+/* 触发图1引发图片样式 */
+.put1{
+    position: absolute;
+    right: -2000px;
+    top: 120px;
+    width: 679px;
+    height: 35px;
+    /* 背景颜色 */
+    background-color:#f186ad;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    z-index: 99999;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    color: #100e0e;
+    font-size: 35px;
+    line-height: 1.5;
+}
+.put2 {
+    position: absolute;
+    top: 155px;
+    right: -2000px; /* 将弹框隐藏到页面最右边 */
+    width: 600px;
+    height: 35px;
+    z-index: 99999;
+    background-color: #7dbc6f;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    z-index: 9999;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    color: #333;
+    font-size: 35px;
+    line-height: 1.5;
+}
+.put3 {
+    position: absolute;
+    top: 190px;
+    right: -2000px; /* 将弹框隐藏到页面最右边 */
+    width: 600px;
+    height: 35px;
+    z-index: 99999;
+    background-color: #f4ede8;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    z-index: 9999;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    color: #333;
+    font-size: 35px;
+    line-height: 1.5;
+}
+
+.put4{
+    position: absolute;
+    top: 225px;
+    right: -2000px; /* 将弹框隐藏到页面最右边 */
+    width: 600px;
+    height: 35px;
+    z-index: 99999;
+    background-color: #eab088;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    z-index: 9999;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    color: #333;
+    font-size: 35px;
+    line-height: 1.5;
+}
+/* 设置图一的hover */
+.img:hover .put1 {
+    right: -620px;
+}
+.img:hover .put2 {
+    right: -620px;
+}
+.img:hover .put3 {
+    right: -620px;
+}
+.img:hover .put4 {
+    right: -620px;
+}
